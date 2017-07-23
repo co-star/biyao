@@ -1,0 +1,477 @@
+/*侧边栏*/
+#rightBar{
+  position: fixed;
+  left: 50%;
+  bottom: 100px;
+  z-index: 101;
+  margin-left: 610px;
+  height: 144px;
+}
+#rightBar .rightBar-code{
+  position: relative;
+  background: url(../img/rightBar-code.png) 0 no-repeat;
+}
+#rightBar .rightBar-code:hover{
+  background: url(../img/rightBar-codeActive.png) 0 no-repeat;
+}
+#rightBar .rightBar-top:hover{
+  background: url(../img/rightBar-topActive.png) 0 no-repeat;
+}
+#rightBar .rightBar-code:hover div{
+  display: block;
+}
+#rightBar .rightBar-code div{
+  position: absolute;
+  top: -65px;
+  left: -160px;
+  display: none;
+}
+#rightBar .rightBar-code dd {
+  margin-top: 10px;
+  text-align: center;
+  color: #523669;
+  font-size: 14px;
+}
+#rightBar .rightBar-code dl{
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #dddddd;
+  box-shadow: 0 0 3px #ccc;
+}
+#rightBar .rightBar-code dt {
+  width: 130px;
+  height: 130px;
+  background: url(../img/app.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+#rightBar .rightBar-code span {
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  z-index: 100;
+  display: inline-block;
+  width: 14px;
+  height: 25px;
+  margin-top: -14px;
+  background: url(../img/sprit_biyao.png) -59px -214px no-repeat;
+}
+#rightBar .rightBar-top{
+  overflow: hidden;
+  display: none;
+  background: url(../img/rightBar-top.png) 0 center no-repeat;
+}
+#rightBar li{
+  display: block;
+  width:48px;
+  height:48px;
+  cursor: pointer;
+}
+#rightBar:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#rightBar:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+/*主体内容*/
+#container{
+  width: 1200px;
+  margin:10px auto 0;
+}
+#container:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#container:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+#slider{
+  width:1200px;
+  margin:10px auto 0;
+  height:400px;
+  overflow: hidden;
+  position:relative;
+}
+#indexs{
+  position:absolute;
+  top:350px;
+  left: 500px;
+}
+#slider #imgs {
+  position:absolute;
+  top: 0;  left: 0;
+  height:400px;
+}
+#slider #imgs li{
+  float:left;
+  z-index:0;
+}
+#slider #indexs {
+  position:absolute;
+  bottom:15px;
+  right:30px;
+}
+#slider #indexs li {
+  width: 10px;
+  height: 10px;
+  line-height: 14px;
+  display: inline-block;
+  color: transparent;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  border:2px solid #fff;
+  margin:6px;
+}
+#slider #indexs li:hover,#slider #indexs li.hover {
+  background:#523669;
+}
+.safeguard:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+.safeguard:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+.safeguard{
+  width: 1200px;
+  height: 69px;
+  background: #fff;
+  border-top: 1px solid #eeeeee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+.safeguard li{
+  float: left;
+  width: 300px;
+  height: 69px;
+  text-align: center;
+  line-height: 69px;
+  font-size: 18px !important;
+  color: #523669;
+}
+#accordion:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#accordion:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+#accordion{
+  margin-top: 38px;
+  overflow: hidden;
+}
+#accordion_box{
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#accordion_box li{
+  position: absolute;
+  display: block;
+  left: 0;
+  background: #fff;
+  transition:all 0.8s linear;
+}
+#accordion_box li:hover{
+  transition:all 0.8s linear;
+}
+#accordion_box li a{
+  display: block;
+  overflow: hidden;
+}
+#glasses:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#glasses:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+#glasses{
+  margin-top: 38px;
+  overflow: hidden;
+}
+.glasses_title h1{
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+  font-weight:normal;
+}
+.glasses_title p{
+  margin-top: 10px;
+  color: #808080;
+  font-size: 16px;
+  text-align: center;
+  padding-left:80px;
+  margin-bottom: 20px;
+}
+.glasses_title p a{
+  float: right;
+  color: #808080;
+  font-size: 16px;
+  text-align: right;
+}
+.glasses{
+  overflow: hidden;
+}
+.glasses li{
+  float: left;
+}
+.glasses li a{
+  position: relative;
+  display: block;
+  width: 285px;
+  height: 285px;
+  margin: 4px 12px 4px 3px;
+}
+.glasses li a:hover{
+  box-shadow: 0 0 4px 3px #ddd;
+}
+.glasses li a img{
+  width: 100%;
+  height: 100%;
+}
+.glasses li dl{
+  height: 50px;
+  overflow: hidden;
+}
+.glasses li dl dt{
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+}
+.glasses li dl dd{
+  color: #ff3333;
+  font-size: 16px;
+  text-align: center;
+}
+div.floor>header>span:hover,div.floor>header>span.hover {
+  background-position:-40px 2px;
+}
+#f1:before{
+  content: '';
+display:table;
+clear: both;
+}
+#f1:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+#f1{
+  margin-top: 38px;
+  overflow: hidden;
+}
+#f1 .glasses_title h1{
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+  font-weight:normal;
+}
+#f1 .glasses_title p{
+  margin-top: 10px;
+  color: #808080;
+  font-size: 16px;
+  text-align: center;
+  padding-left:80px;
+  margin-bottom: 20px;
+}
+#f1 .glasses_title p a{
+  float: right;
+  color: #808080;
+  font-size: 16px;
+  text-align: right;
+}
+#f1 .glasses{
+  overflow: hidden;
+}
+#f1 .glasses li{
+  float: left;
+}
+#f1 .glasses li a{
+  position: relative;
+  display: block;
+  width: 285px;
+  height: 285px;
+  margin: 4px 12px 4px 3px;
+}
+#f1 .glasses li a:hover{
+  box-shadow: 0 0 4px 3px #ddd;
+}
+#f1 .glasses li a img{
+  width: 100%;
+  height: 100%;
+}
+#f1 .glasses li dl{
+  height: 50px;
+  overflow: hidden;
+}
+#f1 .glasses li dl dt{
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+}
+#f1 .glasses li dl dd{
+  color: #ff3333;
+  font-size: 16px;
+  text-align: center;
+}
+#f3:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#f3:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+#f3{
+  margin-top:20px;
+}
+/*摸态框*/
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0, .7);
+  z-index: 999;
+  /*display: none;*/
+}
+.modal-dialog {
+  width: 400px;
+  margin: 100px auto;
+}
+.modal-content {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #aaa;
+  padding: 16px 12px;
+}
+.modal-content h4 {
+  font-size: 1.5em;
+}
+.modal-content input {
+  box-sizing: border-box; /*总宽=width+margin*/
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  padding: 11px 20px;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Microsoft YaHei";
+  width:350px;
+  margin-bottom: 20px;
+  height:40px;
+}
+#bt-login{
+  background: #F49F26;
+  color: #fff;
+  height:45px;
+  font-size: 24px;
+  border: 0;
+}
+.modal-content p i{
+  display:inline-block;
+  width: 25px;
+  height: 24px;
+  background: url("../img/sprit_biyao.png") no-repeat 0 -521px;
+  margin-right: 10px;
+  margin-bottom: -3px;
+}
+.modal-content p{
+  font-size: 20px;
+  color: #523669;
+  margin-bottom: 20px;
+}
+/*分页*/
+.pager {
+  margin: 15px;
+  float:right;
+}
+.pager li {
+  display: inline-block;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  padding: 9px 13px;
+}
+.pager li.active {
+  border: 1px solid transparent;
+  background: transparent;
+}
+.pager li.active a {
+  color: #e4393c;
+  cursor: default;
+}.pager {
+   margin: 15px auto 0;
+ }
+.pager li {
+  display: inline-block;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  padding: 9px 13px;
+}
+.pager li.active {
+  border: 1px solid transparent;
+  background: transparent;
+}
+.pager li.active a {
+  color: #e4393c;
+  cursor: default;
+}
+/*楼梯*/
+.elevator{
+  left: 34.5px;
+  top: 50%;
+  margin-top:-45px;
+  display:none;
+  position: fixed;
+  z-index: 5;
+  width:30px;
+}
+.elevator li {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  overflow: hidden;
+  margin-top: -1px;
+  cursor: pointer;
+}
+.elevator li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  color: #625351;
+  font-size: 14px;
+  font-family: Arial;
+}
+.elevator li .etitle {
+  display: none;
+  height: 30px;
+  font-size: 20px;
+  text-align:center;
+  color: #fff;
+  background-color:#523669;
+  border-radius: 5%;
+}

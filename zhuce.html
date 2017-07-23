@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/1.css"/>
+  <link rel="stylesheet" href="css/zhuce.css"/>
+</head>
+<body>
+<div id="nav_box">
+  <div id="nav">
+    <div class="nav">
+      <div class="logo fl">
+        <a href="#">
+          <img src="img/logo.png"/>
+        </a>
+      </div>
+      <div class="ft">
+        <ul class="info_box">
+          <li>
+            <span>
+              欢迎来到必要，请
+              <span>欢迎来到必要，请 </span>
+            </span>
+            <a href="#">登录</a>
+            <span>|</span>
+            <span>注册</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="container">
+    <div class="container">
+      <div class="panel">
+        <p><i></i>新用户注册</p>
+        <form action="user_add.php" method="post" id="form-register">
+          <div class="form-group">
+            <label for="uname"></label>
+            <input id="uname" required minlength="6" maxlength="9" type="text" placeholder="请输入用户名" autofocus name="uname"/>
+            <span class="msg-default">用户名长度在6到9位之间</span>
+          </div>
+          <div class="form-group">
+            <label for="upwd"></label>
+            <input type="password" minlength="6" maxlength="12" placeholder="请输入密码" required name="upwd" id="upwd"/>
+            <span class="msg-default hidden">密码长度在6到12位之间</span>
+          </div>
+          <div class="form-group">
+            <label for="email"></label>
+            <input required type="email" placeholder="请输入邮箱地址" name="email" id="email"/>
+            <span class="msg-default hidden">请输入合法的邮箱地址</span>
+          </div>
+          <div class="form-group">
+            <label for="yzm"></label>
+            <input required type="text" placeholder="请输入验证码" name="yzm" id="yzm" pattern="" />
+            <canvas id="vcode" width="90" height="26"></canvas>
+            <a href="#" id="a1">看不清，换一张</a>
+            <span class="msg-default hidden">请输入正确的验证码</span>
+          </div>
+          <div class="form-group">
+            <input type="checkbox"/>
+            <span class="yd">我已阅读并同意</span>
+            <a href="#">《必要服务协议》</a>
+          </div>
+          <div class="form-group">
+            <label></label>
+            <input type="button" value="注册" id="bt-register"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<div class="footer">
+  <div class="footer-info">
+    <ul>
+      <li><a target="_blank" href="http://www.biyao.com/minisite/ljby">关于必要</a></li>
+      <li><a target="_blank" href="http://www.biyao.com/help/8.html">加入必要</a></li>
+      <li><a target="_blank" href="http://www.biyao.com/help/tel.html">联系我们</a></li>
+      <li><a target="_blank" href="http://weibo.com/biyaoshangcheng">官方微博</a></li>
+    </ul>
+    <span>◎BIYAO.COM 2015 版权所有</span>
+    <p>
+      <i></i>
+      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496139" target="_blank">粤公网安备44049102496139号</a>
+      <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">粤ICP备13088531号</a>
+    </p>
+  </div>
+  <ul class="footer-code">
+    <li>
+      <span class="code-down"></span>
+      <dl>
+        <dt>扫描二维码下载</dt>
+        <dd>必要手机客户端</dd>
+      </dl>
+    </li>
+    <li>
+      <span class="code-active"></span>
+      <dl>
+        <dt>扫描二维码关注</dt>
+        <dd>必要官方微信</dd>
+      </dl>
+    </li>
+  </ul>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/zhuce.js"></script>
+</body>
+</html>

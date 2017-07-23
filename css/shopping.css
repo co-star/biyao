@@ -1,0 +1,207 @@
+.pd_b40 {
+  padding-bottom: 40px!important;
+}
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrap, .wrapH {
+  width: 1200px;
+}
+.bd_b_d5c {
+  border-bottom: 1px solid #d5cdda;
+}
+.lineH24 {
+  line-height: 24px;
+}
+.pd_t30 {
+  padding-top: 30px;
+}
+.pd_b10 {
+  padding-bottom: 10px !important;
+}
+.t_l {
+  text-align: left;
+}
+.col_523 {
+  color: #523669;
+}
+.f18 {
+  font-size: 18px !important;
+}
+.col_523 {
+  color: #523669;
+}
+.col_666 {
+  color: #666;
+}
+.mg_l10 {
+  margin-left: 10px;
+}
+.sop_table1 {
+  width: 100%;
+  line-height: 20px;
+}
+.order_title {
+  line-height: 35px;
+  background-color: #EEEEEE;
+  padding-left: 10px;
+}
+.col_666 {
+   color: #666;
+ }
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+.mg_r10 {
+  margin-right: 10px;
+}
+i {
+  font-style: normal;
+}
+a {
+  color: #333;
+}
+.tj_box {
+  position: relative;
+}
+.tallyBox {
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #d5cdda;
+  background-color: #eeecef;
+  padding-left: 10px;
+}
+.goonShopping {
+  width: 100px;
+  height: 33px;
+  background: #724A88;
+  line-height: 33px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.js_btn {
+  width: 85px;
+  height: 33px;
+  line-height: 33px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background: #f49f26;
+}
+.tallyBTnPos {
+  float: right;
+  margin: 10px 10px 0 30px;
+}
+
+.tallyBox p {
+  color: #666;
+  height: 48px;
+  float: right;
+}
+.ff6600 {
+  color: #f49f26;
+}
+.f20 {
+  font-size: 20px;
+}
+#cart
+{
+  border: 1px solid #f1f1f1;
+  border-top:2px solid #aaa;
+  width:1200px;
+  background-color: #fcfffa;
+  margin:50px auto 0;
+  border-collapse: collapse;
+  font: 12px "Microsoft YaHei", 微软雅黑, 宋体, Arial, Helvetica, sans-serif;
+}
+#cart td,#cart th{
+  min-height:40px;
+  line-height:40px;
+  border-top:1px solid #f1f1f1;
+  border-bottom:1px solid #f1f1f1;
+  padding:5px;
+  vertical-align: top;
+  text-align: left;
+}
+#cart thead input{
+  vertical-align: middle;
+}
+#cart tbody input[type='checkbox']{
+  float:left;
+  margin-right: 10px;
+}
+#cart tbody div{
+  border:1px solid #f1f1f1;
+  padding:5px;
+  float:left;
+  width:90px;
+  height:80px;
+  text-align: center;
+}
+#cart tbody img {
+  width:90%;
+}
+#cart a
+{
+  text-decoration:none;
+  color:#666;
+}
+#cart a:hover
+{
+  color:#E4393C;
+}
+#cart tbody td span{
+  font-weight: bold;
+}
+
+#cart tbody td input[type='text']{
+  border:1px solid #CACBCB;
+  border-left:0;
+  border-right:0;
+  height:20px;
+  width:40px;
+  padding:0;
+  text-align: center;
+}
+#cart tbody td button{
+  border:1px solid #CACBCB;
+  height:20px;
+  width:20px;
+  padding:0;
+  background-color: #fff;
+  box-sizing:content-box;
+}
+body{
+  overflow-x: hidden;
+}
+#cart tbody img{
+  transition: transform 0.5s linear;
+}
+#cart tbody img:hover{
+  transform:scale(1.1);
+  /*transform:rotate(45deg);*/
+}
+
+#cart:hover::before{
+  transition: left 3s;
+  left: 1360px;
+}
+#cart:before{
+  /*border:1px solid red;*/
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 400px;
+  top: 180px;
+  left: -150px;
+  overflow: hidden;
+  background-image: linear-gradient(to right,rgba(255,255,255,0.2) 0,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0.2) 100%);
+  transform: skewX(-25deg);
+}

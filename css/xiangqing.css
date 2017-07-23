@@ -1,0 +1,591 @@
+/*侧边*/
+#rightBar{
+  position: fixed;
+  left: 50%;
+  bottom: 100px;
+  z-index: 101;
+  margin-left: 610px;
+  height: 144px;
+}
+#rightBar .rightBar-code{
+  position: relative;
+  background: url(../img/rightBar-code.png) 0 no-repeat;
+}
+#rightBar .rightBar-code:hover{
+  background: url(../img/rightBar-codeActive.png) 0 no-repeat;
+}
+#rightBar .rightBar-top:hover{
+  background: url(../img/rightBar-topActive.png) 0 no-repeat;
+}
+#rightBar .rightBar-code:hover div{
+  display: block;
+}
+#rightBar .rightBar-code div{
+  position: absolute;
+  top: -65px;
+  left: -160px;
+  display: none;
+}
+#rightBar .rightBar-code dd {
+  margin-top: 10px;
+  text-align: center;
+  color: #523669;
+  font-size: 14px;
+}
+#rightBar .rightBar-code dl{
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #dddddd;
+  box-shadow: 0 0 3px #ccc;
+}
+#rightBar .rightBar-code dt {
+  width: 130px;
+  height: 130px;
+  background: url(../img/app.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+#rightBar .rightBar-code span {
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  z-index: 100;
+  display: inline-block;
+  width: 14px;
+  height: 25px;
+  margin-top: -14px;
+  background: url(../img/sprit_biyao.png) -59px -214px no-repeat;
+}
+#rightBar .rightBar-top{
+  overflow: hidden;
+  display: none;
+  background: url(../img/rightBar-top.png) 0 center no-repeat;
+}
+#rightBar li{
+  display: block;
+  width:48px;
+  height:48px;
+  cursor: pointer;
+}
+#rightBar:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#rightBar:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+/*主体*/
+#container{
+  width: 1200px;
+  margin:10px auto 0;
+}
+#container:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#container:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+#section:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#section:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+#section{
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+#section>li{
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+  color: #523669;
+}
+#section>li a{
+  display: inline-block;
+  vertical-align: middle;
+  color: #666;
+  padding-bottom: 2px;
+}
+#section>li i{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+.company i{
+  background: url('../img/sprit_biyao.png') no-repeat 0 -400px;
+}
+.phone i{
+  background: url('../img/sprit_biyao.png') no-repeat -23px -400px
+}
+.contact div{
+  display: inline-block;
+  width: 85px;
+  height: 22px;
+  padding-left: 6px;
+  line-height: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact div i{
+  vertical-align: middle;
+  background: url('../img/Sprite.png') no-repeat 0 2px
+}
+#product_intro {
+  position:relative;
+  padding-left:370px;
+  height:474px;
+  min-height: 474px;
+  margin:50px 50px;
+}
+#product_intro:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#product_intro:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+#preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 352px;
+}
+#preview>#mediumDiv
+{
+  width: 350px;
+  height: 350px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  text-align:center;
+  position: relative;
+  background-image: url('../img/xiang/s1x.jpg');
+}
+#preview>#mediumDiv img
+{
+  vertical-align:middle;
+  width:350px;
+  height:350px;
+}
+#preview>#mediumDiv>#mask{
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  background: #ffa;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  display:none;
+}
+#preview>#mediumDiv>#superMask{
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  cursor: move;
+}
+#preview>#largeDiv{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ddd;
+  top: 0;
+  left: 355px;
+  z-index: 999;
+  background-image: url('../img/xiang/s1l.jpg');
+  display: none;
+}
+#preview h1
+{
+  width: 352px;
+  height: 54px;
+  overflow:hidden;
+  padding: 0px;
+  position:relative;
+}
+/*前后移动的按钮*/
+#preview a.backward,#preview a.forward,#preview a.backward_disabled,#preview a.forward_disabled {
+  width: 17px;
+  height: 54px;
+  background-image: url(../img/iconlist_1.png);
+  background-repeat: no-repeat;
+  display:block;
+  z-index:20;
+  position:absolute;
+  top:0px;
+}
+#preview a.backward,#preview a.backward_disabled {
+  left:0px;
+}
+#preview a.forward,#preview a.forward_disabled {
+  right:0px;
+}
+#preview a.backward {
+  background-position: 0px -139px;
+}
+#preview a.backward:hover {
+  background-position: -34px -139px;
+}
+#preview a.backward_disabled {
+  background-position: -68px -139px;
+}
+#preview a.forward {
+  background-position: -17px -139px;
+}
+#preview a.forward:hover {
+  background-position: -51px -139px;
+}
+#preview a.forward_disabled {
+  background-position: -85px -139px;
+}
+/*产品的图标列表*/
+#preview #icon_list {
+  height: 54px;
+  position:absolute;
+  left: 20px;
+  top: 0px;
+}
+#preview #icon_list li {
+  width: 62px;
+  text-align: center;
+  float: left;
+}
+#preview #icon_list li img {
+  width: 50px;
+  height: 50px;
+  padding: 1px;
+  border: 1px solid #CECFCE;
+}
+#preview #icon_list li img:hover {
+  border: 2px solid #724A88;
+  padding: 0;
+}
+#panel{
+  float: left;
+  width: 465px;
+  margin-left: 50px;
+}
+#panel-top{
+  border-bottom: 1px solid #ccc;
+}
+#panel-main li{
+  overflow: hidden;
+  margin-top: 20px;
+}
+#panel-top>h1{
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 14px;
+}
+#panel-top>p{
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 14px;
+}
+#panel-main li:nth-child(1){
+  margin-top: 15px;
+}
+#panel-main span{
+  float: left;
+  width: 65px;
+  font-size: 14px;
+  color: #666;
+}
+#panel-main li:nth-child(1) span{
+  height: 35px;
+  line-height: 42px;
+}
+#panel-main li:nth-child(1) div span{
+  display: inline-block;
+  height: 35px;
+  font-size: 14px;
+}
+#panel-main li:nth-child(1) div{
+  height: 35px;
+}
+#panel-main div{
+  float: left;
+  width: 400px;
+}
+#panel-main li:nth-child(1) div .panel-maney{
+  color: #f85453;
+}
+#panel-main li:nth-child(1) div .panel-maney i{
+  display: inline-block;
+  height: 35px;
+  vertical-align: -3px;
+  font-size: 28px;
+}
+#panel-main li:nth-child(1) div .panel-duration{
+   margin-left: 40px;
+    width:120px;
+   vertical-align: 1px;
+}
+#panel-main li.panel-color span{
+  padding-top: 8px;
+}
+#panel-main li.panel-color li.panel-size{
+  border: 1px solid #b768a5;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  margin: 0 11px 10px 0;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 23px;
+  font-size: 14px;
+}
+#panel-main li.panel-color li.panel-size s{
+  display:block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('../img/sprit_biyao.png') -147px -36px no-repeat;
+}
+#panel-main li:nth-child(4) p{
+  padding-left:65px;
+  color: #666;
+}
+#panel-main li:nth-child(5) p{
+  float: left;
+  border: 1px solid #b3b3b3;
+  padding: 1px 0;
+  overflow: hidden;
+}
+#panel-main li:nth-child(5) p span:nth-child(1){
+  width: 23px;
+  border-right: 1px solid #e4e3e5;
+  color: #8c8b8b;
+  cursor: pointer;
+}
+#panel-main li:nth-child(5) p span{
+  float: left;
+  width: 28px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+}
+#panel-main li:nth-child(5) p span:nth-child(3){
+  width: 23px;
+  border-left: 1px solid #e4e3e5;
+  color: #8c8b8b;
+  cursor: pointer;
+}
+#panel-main li:nth-child(6) a{
+  display:block;
+  width: 195px;
+  height: 40px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background: #f39f25;
+  cursor: pointer;
+}
+#panel-main li:nth-child(6) a s{
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 16px;
+  margin-right: 6px;
+  background: url('../img/pay_bg.png') no-repeat;
+}
+#warp{
+  margin-top: 30px;
+  overflow: hidden;
+}
+#warp:before{
+  content: '';
+  display:table;
+  clear: both;
+}
+#warp:after{
+  content: '';
+  display:table;
+  clear: both;
+}
+#warp #warpi li{
+  float: left;
+  line-height: 36px;
+  font-size: 14px;
+  position: relative;
+  width: 130px;
+  text-align: center;
+  cursor: pointer;
+}
+.warp_box{
+  border-bottom: 2px solid #b768a5;
+}
+#warp #warpi{
+  height: 36px;
+  border-bottom: 2px solid #e8e8e8;
+  position: relative;
+}
+#warp .warp{
+  width: 800px;
+  margin: 20px auto 20px;
+}
+#warp .warp dl{
+  line-height: 32px;
+  border-bottom: 2px dotted #cecece;
+  font-size: 16px;
+  color: #333;
+}
+#warp .warp dl dt{
+  display: inline-block;
+  width: 160px;
+  font-size: 16px;
+  color: #666;
+  vertical-align: top;
+}
+#warp .warp dl dd{
+  display: inline-block;
+  width: 630px;
+  font-size: 16px;
+  color: #333;
+}
+#warp .ping{
+  height:204px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+#warp .ping .ping1{
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+}
+#warp .ping div span:nth-child(1){
+  color: #666;
+  font-size: 16px!important;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+#warp .ping div span:nth-child(2) em{
+  display: inline-block;
+  vertical-align: middle;
+  width: 161px;
+  height: 23px;
+  position: relative;
+  left:20px;
+  background: url('../img/sprit_biyao.png') no-repeat -321px -216px;
+}
+#warp .ping div span:nth-child(2) em i{
+  height: 23px;
+  width: 170px;
+  background: url('../img/sprit_biyao.png') no-repeat -321px -190px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+#warp .ping div span:nth-child(3){
+  margin-left: 10px;
+}
+#warp .ping div span:nth-child(3) span:nth-child(1){
+  color: #f39f25;
+  display: inline-block;
+  vertical-align: middle;
+}
+#warp .ping div span:nth-child(3) span:nth-child(2){
+  margin-left: 3px;
+  color: #666;
+  font-size: 16px!important;
+  display: inline-block;
+  vertical-align: middle;
+}
+#warp .ping div span:nth-child(4){
+  display: inline-block;
+  vertical-align: middle;
+  color: #666;
+  margin-left: 10px;
+}
+#warp .pingjia{
+  padding: 20px 0;
+  position: relative;
+  min-height: 100px;
+  border-bottom: 1px dotted #ccc;
+}
+#warp .pingjia_box{
+  width: 130px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 20px;
+}
+#warp .pingjia_box img{
+  border: 1px #E2E2E2 solid;
+  width: 100px;
+  height: 100px;
+}
+#warp .pingjia_box1{
+  float: right;
+  height: 91px;
+  width: 1070px;
+}
+#warp .pingjia_box2{
+  margin-left: 33px;
+  margin-top: 30px;
+}
+#warp .pingjia_box3{
+  margin-top: 18px;
+  margin-left: 33px;
+}
+#warp .ping .pingjia .pingjia_box1 h3 span em{
+  display: inline-block;
+  vertical-align: middle;
+  width: 161px;
+  height: 23px;
+  position: relative;
+  left:20px;
+  background: url('../img/sprit_biyao.png') no-repeat -321px -216px;
+}
+#warp .ping .pingjia .pingjia_box1 h3 span em i{
+  height: 23px;
+  width: 170px;
+  background: url('../img/sprit_biyao.png') no-repeat -321px -190px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+#warp .ping .pingjia .pingjia_box1 h3 span span{
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
+
